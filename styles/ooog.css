@@ -296,18 +296,19 @@ footer {
 	transform: scale(0.25, 0.25);
 }
 
-.projectDisplay {
-	margin: 6rem 3rem 3rem;
-}
 
 .projectName {
 	text-transform: uppercase;
 	font-size: 3rem;
+	width: 72%;
+	margin-left: 1rem;
 }
 
 .projectDescription {
 	font-size: 2rem;
 	text-align: left;
+	width: 60%;
+	margin-left: 1rem;
 }
 
 body > section > img:nth-child(3) {
@@ -355,6 +356,20 @@ body > section > img:nth-child(3) {
 		height: 3rem;
 		background-color: blue;
 	}
+
+	.projectName {
+	text-transform: uppercase;
+	font-size: 3rem;
+	width: 90%;
+	margin-left: 1rem;
+}
+
+	.projectDescription {
+	font-size: 2rem;
+	text-align: left;
+	width: 84%;
+	margin-left: 1rem;
+}
 
 	.photoStream {
 	margin-left: 0rem; 
