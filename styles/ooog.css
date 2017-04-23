@@ -303,11 +303,13 @@ footer {
 .projectName {
 	text-transform: uppercase;
 	font-size: 3rem;
+	width: 72%;
 }
 
 .projectDescription {
 	font-size: 2rem;
 	text-align: left;
+	width: 60%;
 }
 
 body > section > img:nth-child(3) {
