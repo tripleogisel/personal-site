@@ -296,9 +296,6 @@ footer {
 	transform: scale(0.25, 0.25);
 }
 
-.projectDisplay {
-	margin: 6rem 3rem 3rem;
-}
 
 .projectName {
 	text-transform: uppercase;
@@ -357,6 +354,18 @@ body > section > img:nth-child(3) {
 		height: 3rem;
 		background-color: blue;
 	}
+
+	.projectName {
+	text-transform: uppercase;
+	font-size: 3rem;
+	width: 90%;
+}
+
+	.projectDescription {
+	font-size: 2rem;
+	text-align: left;
+	width: 84%;
+}
 
 	.photoStream {
 	margin-left: 0rem; 
