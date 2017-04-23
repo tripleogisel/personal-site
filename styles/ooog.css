@@ -1,6 +1,7 @@
 /*general site styles*/
 html {
 	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Serif;
 }
 
 body {
@@ -52,6 +53,10 @@ button:focus {
 
 .brainJump {
 	margin: 5rem;
+}
+
+.brains {
+	width: 100%;
 }
 
 #machine {
@@ -149,31 +154,24 @@ button:focus {
 
 
 /*reusuable mini nav for all content pages*/
+
+.shot {
+	display: inline-block;
+	position: absolute;
+	margin: 1rem;
+	height: 3rem;
+	right: 1rem;
+}
+
 #miniNav {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: row;
-	-ms-flex-pack: distribute;
-	justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: black;
-
-
-    width: 100%;
-
-    position: fixed;
-    top: 0px;
-    z-index: 10;
+	width: 100%;
+	background-color: black;
+	position: relative;
 }
 
 .siteNav {
-	margin: .75rem;
+	display: inline-block;
+	margin: 1rem;
 }
 
 .pageNav {
@@ -294,44 +292,30 @@ footer {
 	background-color: white;
 }
 
-.projectDisplay {
-	width: 80%;
-	margin: 0 12rem;
-	margin-top: 12rem;
-	display: block;
-}
-
 #brainBucket {
 	transform: scale(0.25, 0.25);
 }
 
-
+.projectDisplay {
+	margin: 6rem 3rem 3rem;
+}
 
 .projectName {
 	text-transform: uppercase;
-	text-align: center;
+	font-size: 3rem;
 }
 
 .projectDescription {
-	margin: 3rem 1.5rem 6rem 0;
 	font-size: 2rem;
 	text-align: left;
 }
 
-.projectImage {
-	max-width: 100%;
-	margin-bottom: 1rem;
-	box-shadow: 0px -3px 2px #eee;
-	box-shadow: 0px 3px 2px #eee;
+body > section > img:nth-child(3) {
+	margin-top: 10rem
 }
 
 .projectImageCaption {
-	margin: 0 auto;
-	width: 550px;
-	font-size: 1.25rem;
-	/*padding: 2rem 10rem;*/
-	margin-bottom: 10rem;
-	
+	margin: 2rem 4rem 10rem 0rem;
 }
 
 
@@ -341,33 +325,8 @@ footer {
 	background-color: white;
 }
 
-.shot {
-	height: 3rem;
-	text-align: center;
-	margin-right: 1rem
-}
-
 .photoStream {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: row;
-	-ms-flex-pack: distribute;
-	justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    position: relative;
-    margin-top: 8rem;
-}
-
-.ooogPhoto {
-	max-width: 450px;
-	max-height: 375px;
+	margin-left: 30rem; 
 }
 
 .ooogPhotoCaption {
@@ -377,8 +336,14 @@ footer {
 	display: none;
 }
 
-p {
-	text-align: center;
+.ooogPhoto {
+	width: 75%;
+	border: .15rem solid #eee;
+	display: inline-block;
+}
+
+.ooogPhotoBucket {
+	display: inline-block;
 }
 
 
@@ -389,6 +354,14 @@ p {
 	.miniBodega {
 		height: 3rem;
 		background-color: blue;
+	}
+
+	.photoStream {
+	margin-left: 0rem; 
+}
+
+	.ooogPhoto {
+		width: 100%;
 	}
 
 	html {
@@ -418,15 +391,7 @@ p {
 	.externals>a {
 	margin-left: 0px;
 	padding-bottom: 20px;
-
-	.projectDisplay{
-		width: 80%;
-		padding-top: 80px;
-		height: 100px;
-	}
-
-	#brainBody {
-	}
+}
 
 	.projectNav {
 		background-color: rgba(255, 255, 255, .34);
@@ -442,10 +407,6 @@ p {
 		padding:;
 	}
 
-
-	.ooogPhoto {
-		width: 100%;
-	}
 
 	#machine{
 		margin: 10rem auto 0;
