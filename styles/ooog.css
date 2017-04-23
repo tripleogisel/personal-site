@@ -359,12 +359,14 @@ body > section > img:nth-child(3) {
 	text-transform: uppercase;
 	font-size: 3rem;
 	width: 90%;
+	margin-left: 1rem;
 }
 
 	.projectDescription {
 	font-size: 2rem;
 	text-align: left;
 	width: 84%;
+	margin-left: 1rem;
 }
 
 	.photoStream {
