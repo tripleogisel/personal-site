@@ -301,12 +301,14 @@ footer {
 	text-transform: uppercase;
 	font-size: 3rem;
 	width: 72%;
+	margin-left: 1rem;
 }
 
 .projectDescription {
 	font-size: 2rem;
 	text-align: left;
 	width: 60%;
+	margin-left: 1rem;
 }
 
 body > section > img:nth-child(3) {
