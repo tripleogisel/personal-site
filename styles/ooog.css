@@ -335,6 +335,7 @@ body > section > img:nth-child(3) {
 
 .projectImageCaption {
 	margin: 2rem 4rem 10rem 0rem;
+	width: 50%;
 }
 
 
