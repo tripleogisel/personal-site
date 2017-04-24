@@ -178,6 +178,14 @@ button:focus {
 	margin-right: .75rem;
 }
 
+.pageCaption {
+	display: inline-block;
+	position: fixed;
+	right: 1rem;
+	top: 1rem;
+	text-align: right;
+}
+
 .miniNavButton {
 		width: 2rem;
 		height: 2rem;
@@ -296,12 +304,22 @@ footer {
 	transform: scale(0.25, 0.25);
 }
 
+.projectDisplay {
+	margin-left: 2rem;
+}
 
 .projectName {
 	text-transform: uppercase;
 	font-size: 3rem;
 	width: 72%;
 	margin-left: 1rem;
+}
+
+.floorRug {
+	height: 5rem;
+	background-color: white;
+	position: fixed;
+	bottom: 0px;
 }
 
 .projectDescription {
