@@ -163,14 +163,6 @@ button:focus {
 	right: 1rem;
 }
 
-.shot {
-	display: inline-block;
-	position: absolute;
-	margin: 1rem;
-	height: 3rem;
-	right: 1rem;
-}
-
 #miniNav {
 	width: 100%;
 	background-color: black;
@@ -184,14 +176,6 @@ button:focus {
 
 .pageNav {
 	margin-right: .75rem;
-}
-
-.pageCaption {
-	display: inline-block;
-	position: fixed;
-	right: 1rem;
-	top: 1rem;
-	text-align: right;
 }
 
 .miniNavButton {
@@ -313,28 +297,17 @@ footer {
 }
 
 .projectDisplay {
-	margin-left: 2rem;
+	margin: 6rem 3rem 3rem;
 }
 
 .projectName {
 	text-transform: uppercase;
 	font-size: 3rem;
-	width: 72%;
-	margin-left: 1rem;
-}
-
-.floorRug {
-	height: 5rem;
-	background-color: white;
-	position: fixed;
-	bottom: 0px;
 }
 
 .projectDescription {
 	font-size: 2rem;
 	text-align: left;
-	width: 60%;
-	margin-left: 1rem;
 }
 
 body > section > img:nth-child(3) {
@@ -343,7 +316,6 @@ body > section > img:nth-child(3) {
 
 .projectImageCaption {
 	margin: 2rem 4rem 10rem 0rem;
-	width: 50%;
 }
 
 
@@ -383,20 +355,6 @@ body > section > img:nth-child(3) {
 		height: 3rem;
 		background-color: blue;
 	}
-
-	.projectName {
-	text-transform: uppercase;
-	font-size: 3rem;
-	width: 90%;
-	margin-left: 1rem;
-}
-
-	.projectDescription {
-	font-size: 2rem;
-	text-align: left;
-	width: 84%;
-	margin-left: 1rem;
-}
 
 	.photoStream {
 	margin-left: 0rem; 
