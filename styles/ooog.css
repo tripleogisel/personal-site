@@ -363,6 +363,7 @@ body > section > img:nth-child(3) {
 
 .uploadDate {
 	float: right;
+	padding-right: 3rem;
 }
 
 body > div > div:nth-child(1)
