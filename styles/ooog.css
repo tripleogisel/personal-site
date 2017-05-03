@@ -163,6 +163,14 @@ button:focus {
 	right: 1rem;
 }
 
+.shot {
+	display: inline-block;
+	position: absolute;
+	margin: 1rem;
+	height: 3rem;
+	right: 1rem;
+}
+
 #miniNav {
 	width: 100%;
 	background-color: black;
@@ -208,7 +216,7 @@ button:focus {
 
 
 
-														/*end mini nav styles*/
+														/*end page mini nav styles*/
 
 
 body {
@@ -216,7 +224,7 @@ body {
  	height: 100%;
 }
 
-
+/*START footer */
 footer {
 	height: 300px;
 	display: block;
@@ -255,6 +263,9 @@ footer {
 	text-transform: capitalize;
 	font-size: 2.25rem;
 }
+
+/*end footer styles*/
+
 
 /*userWork carousel*/
 
@@ -346,7 +357,18 @@ body > section > img:nth-child(3) {
 }
 
 .photoStream {
-	margin-left: 30rem; 
+	margin-left: 36rem; 
+	margin-top: 8rem;
+}
+
+.uploadDate {
+	float: right;
+}
+
+body > div > div:nth-child(1)
+
+.photoStream > .photoBucket:nth-child(1) {
+	margin-top: 100px;
 }
 
 .ooogPhotoCaption {
@@ -392,6 +414,7 @@ body > section > img:nth-child(3) {
 
 	.photoStream {
 	margin-left: 0rem; 
+
 }
 
 	.ooogPhoto {
