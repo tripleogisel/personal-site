@@ -383,6 +383,7 @@ body > div > div:nth-child(1)
 	width: 75%;
 	border: .15rem solid #eee;
 	display: inline-block;
+	margin-bottom: 3rem;
 }
 
 .ooogPhotoBucket {
