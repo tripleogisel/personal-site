@@ -339,6 +339,7 @@ body > section > img:nth-child(3) {
 .ooogPhoto {
 	width: 75%;
 	display: inline-block;
+	border: 0px;
 }
 
 .ooogPhotoBucket {

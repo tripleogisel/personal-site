@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	background-color: white;
 	margin: 0;
 }
@@ -357,7 +357,7 @@ body > section > img:nth-child(3) {
 }
 
 .photoStream {
-	margin-left: 36rem; 
+	margin-left: 36rem;
 	margin-top: 8rem;
 }
 
@@ -381,7 +381,6 @@ body > div > div:nth-child(1)
 
 .ooogPhoto {
 	width: 75%;
-	border: .15rem solid #eee;
 	display: inline-block;
 	margin-bottom: 3rem;
 }
@@ -415,7 +414,7 @@ body > div > div:nth-child(1)
 }
 
 	.photoStream {
-	margin-left: 0rem; 
+	margin-left: 0rem;
 
 }
 
