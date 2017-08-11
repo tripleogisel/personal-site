@@ -55,10 +55,6 @@ button:focus {
 	margin: 5rem;
 }
 
-img {
-	border: 0px;
-}
-
 .brains {
 	width: 100%;
 }
@@ -342,7 +338,6 @@ body > section > img:nth-child(3) {
 
 .ooogPhoto {
 	width: 75%;
-	border: .15rem solid #eee;
 	display: inline-block;
 }
 
