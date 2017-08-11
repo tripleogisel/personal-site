@@ -22,33 +22,33 @@ var dumpIndex = 0;
 // 	});
 // });
 
-var slideShow = function(){
-		$.ajax({
-		url:"https://tripleogisel.github.io/brainWork-movers",
-		context: document.body,
-		dataType: "html"
-	}).done(function(data){
-		console.log(dumpIndex);
-		var y = $(data).filter(dumps[dumpIndex+=1]).html();
-		console.log(y);
-		console.log(dumps[dumpIndex]);
-		$(".brainSample").css('opacity',.25).animate({'opacity':1});
-		$(".brainSample").html(y);
-	});
-}
-
-setInterval(slideShow, 7000);
-
-console.log('main.js is loaded');
-
-$('img').on('click', function(){
-	$().toggleClass("location");
-})
-
-$('.photo').on('click', function(){
-	var para = $(this).children('p');
-	$(para).toggleClass("location");
-})
+// var slideShow = function(){
+// 		$.ajax({
+// 		url:"https://tripleogisel.github.io/brainWork-movers",
+// 		context: document.body,
+// 		dataType: "html"
+// 	}).done(function(data){
+// 		console.log(dumpIndex);
+// 		var y = $(data).filter(dumps[dumpIndex+=1]).html();
+// 		console.log(y);
+// 		console.log(dumps[dumpIndex]);
+// 		$(".brainSample").css('opacity',.25).animate({'opacity':1});
+// 		$(".brainSample").html(y);
+// 	});
+// }
+//
+// setInterval(slideShow, 7000);
+//
+// console.log('main.js is loaded');
+//
+// $('img').on('click', function(){
+// 	$().toggleClass("location");
+// })
+//
+// $('.photo').on('click', function(){
+// 	var para = $(this).children('p');
+// 	$(para).toggleClass("location");
+// })
 
 // user work array
 var projects = ["#projectOne", "#projectTwo", "#projectThree", "#projectFour"];
@@ -80,7 +80,7 @@ $('.forward').on('click', function(){
 			console.log(x);
 			disableButton();
 		}
-		
+
 	});
 
 });
@@ -105,7 +105,7 @@ $('.backward').on('click', function(){
 			$('.projectDisplay').html(x);
 			disableButton();
 		}
-		
+
 	});
 
 })
@@ -156,7 +156,7 @@ theWindow.on('scroll', scrollingBox);
 
 theWindow.scroll(function(){
 	var scrollLocation = theWindow.scrollTop();
-	
+
 	var darken = function () {
 		$('.carousel').addClass('superDark');
 		console.log("hey");
@@ -224,7 +224,7 @@ $()
 
 // $('img').on('mouseover', function(){
 // 	if(index<3) {
-	
+
 // 	index+=1;
 // 	}
 
@@ -234,4 +234,3 @@ $()
 
 // 	$("img").attr("src", keyImages[index]);
 // });
-
