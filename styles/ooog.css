@@ -214,6 +214,21 @@ button:focus {
 	height: 2rem;
 }
 
+.foota {
+	background-color: #3a3a3a;
+	color: rgb(255, 255, 255, .24);
+	height: 80rem;
+	text-align: center;
+	font: 12px;
+	line-height: 12px;
+	margin: 0 auto;
+	font-variant: small-caps;
+}
+
+.goElsewhere {
+	font-variant: small-caps;
+}
+
 #miniNav > a.miniNavButtons.miniUserWork {
 	margin: 0;
 }
