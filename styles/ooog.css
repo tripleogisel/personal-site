@@ -8,6 +8,7 @@ body {
 	box-sizing: border-box;
 	background-color: white;
 	margin: 0;
+	position: relative;
 }
 
 p {
@@ -39,16 +40,37 @@ button:focus {
 }*/
 
 #home {
-	background-color: grey;
+	background-color: #ddd;
 	position: relative;
 }
 
 #floor {
-	margin-top: 25rem;
+		margin-top: 25rem;
     border-bottom: 31rem solid black;
     border-left: 30rem solid transparent;
     border-right: 30rem solid transparent;
     opacity: .34;
+}
+
+#resume {
+		position: fixed;
+		top: 2rem;
+		right: 2rem;
+		height: 11rem;
+		width: 8.5rem;
+		background-color: white;
+		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.02);
+}
+
+#sun {
+	position: fixed;
+	top: 2rem;
+	left: 2rem;
+	height: 16rem;
+	width: 16rem;
+	background-color: yellow;
+	border-radius: 16rem;
+
 }
 
 .brainJump {
@@ -60,17 +82,17 @@ button:focus {
 }
 
 #machine {
-	z-index: 1;
+	z-index: 2;
 	width: 20rem;
 	height: 36rem;
-	background-color: blue;
-
-	position: absolute;
-	left: 40%;
-	top: -100px;
-
-	border-left: .5rem solid #010062;
-	border-bottom: .25rem solid black;
+	background-color: #1a1a1a;
+	position: fixed;
+	/* vertical-align: middle; */
+	margin-left: 2rem;
+	border-right: .5rem solid rgba(0,0,0,.18);
+	border-bottom: .25rem solid rgba(0,0,0,.36);
+	/* border-top: .5rem solid rgba(0,0,0,.18); */
+	box-shadow: 10px 10px 80px 10px rgba(0, 0, 0, 0.6);
 }
 
 .brand {
@@ -97,11 +119,29 @@ button:focus {
 	display: none;
 }
 
+.resumeContainer{
+	background-color: #eee;
+}
+
+.resume {
+	position: relative;
+	display: block;
+  margin: auto;
+	padding: 14rem 0;
+  width: 80%;
+}
+
 /*first button on the machine*/
 .drank  {
-	width: 3rem;
-	height: 1rem;
 	position: absolute;
+	padding: .25rem;
+	margin-bottom: 4rem;
+	width: 4rem;
+	text-align: center;
+	text-decoration: none;
+	font-variant: small-caps;
+	color: rgba(0, 0, 0, 0.75);
+	font-size: 1rem;
 }
 
 .userWork {
@@ -192,6 +232,7 @@ button:focus {
 	right: 1rem;
 	top: 1rem;
 	text-align: right;
+	color: rgba(255, 255, 255, 0.54);
 }
 
 .miniNavButton {
@@ -207,7 +248,7 @@ button:focus {
 
 .miniBodega {
 	height: 20rem;
-	background-color: blue;
+	background-color: #1a1a1a;
 }
 
 .scrolled {
@@ -416,7 +457,7 @@ body > div > div:nth-child(1)
 
 	.miniBodega {
 		height: 3rem;
-		background-color: blue;
+		background-color: lightblue;
 	}
 
 	.projectName {
@@ -511,9 +552,9 @@ body > div > div:nth-child(1)
 @media (min-width: 1300px){
 
 	#floor{
-		margin-top: 49rem;
+			z-index: 1;
     	border-bottom: 37rem solid black;
-    	border-left: 36rem solid transparent;
-    	border-right: 36rem solid transparent;
+    	border-left: 30rem solid transparent;
+    	border-right: 30rem solid transparent;
 	}
 }
