@@ -18,6 +18,15 @@ p {
     -webkit-margin-end: 0rem;
 }
 
+h2 {
+display: block;
+-webkit-margin-before: 0px;
+-webkit-margin-after: 0px;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: regular;
+}
+
 button {
 	-webkit-appearance: none;
 }
@@ -60,6 +69,16 @@ button:focus {
 		width: 8.5rem;
 		background-color: white;
 		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.02);
+}
+
+.bio {
+	position: fixed;
+	top: 2rem;
+	left: 2rem;
+	font-size: .75rem;
+	line-height: 1.25rem;
+	color: rgba(0, 0, 0, 0.87);
+	width: 28%;
 }
 
 #sun {
@@ -128,7 +147,7 @@ button:focus {
 	display: block;
   margin: auto;
 	padding: 14rem 0;
-  width: 80%;
+  width: 64%;
 }
 
 /*first button on the machine*/
@@ -260,11 +279,22 @@ button:focus {
 	color: rgba(255, 255, 255, .08);
 	font-size: 2rem;
 	font-variant: small-caps;
-	height: 2rem;
+	padding: 4rem;
 	text-align: center;
 	padding: 50rem 0;
 	vertical-align: middle;
-	line-height: 5rem;
+	line-height: 2rem;
+}
+
+.oota {
+	background-color: blue;
+	font-size: 4rem;
+	width: 100%;
+}
+
+.oota > a {
+	font-variant: small-caps;
+	color: rgba(255, 255, 255, .54);
 }
 
 .goElsewhere {
@@ -287,18 +317,17 @@ body {
 
 /*START footer */
 footer {
-	height: 300px;
 	display: block;
 	background-color: #ddd;
-    width: 100%;
+  width: 100%;
 }
 
 .footerTitle {
 	width: 100%;
 	text-align: center;
 	color: rgba(255,255,255,.34);
-	margin: 0px 0px 40px 0px;
-	padding-top: 20px
+	margin-bottom: 4rem;
+	font-size: 1.5rem;
 }
 
 .externals {
@@ -316,10 +345,11 @@ footer {
     align-items: flex-start;
     flex-wrap: wrap;
     position: relative;
+		padding: 4rem;
 }
 
 .externals>a {
-	margin-left: 20px;
+	margin: 1.5rem;
 	color: rgba(255,255,255,.87);
 	text-transform: capitalize;
 	font-size: 2.25rem;
@@ -376,15 +406,57 @@ footer {
 	transform: scale(0.25, 0.25);
 }
 
-.projectDisplay {
-	margin: 1.25rem;
+.page {
+	margin: 2.5rem;
 }
 
-.projectName {
+.pageIntroArea {
+	padding-bottom: 5rem;
+}
+
+.pageIntro {
 	text-transform: uppercase;
-	font-size: 3rem;
+	font-size: 4rem;
+	margin-bottom: 1rem;
 	width: 72%;
-	margin-left: 1rem;
+	font-weight: 700;
+}
+
+.watchButton {
+	padding: 2rem;
+	background-color: blue;
+	border-radius: 1rem;
+	font-size: 1rem;
+	display: block;
+	width: 16rem;
+	color: white;
+	text-align: center;
+	margin: 2rem 2rem 2rem 0rem;
+}
+
+.description {
+	font-size: 1.5rem;
+	text-align: left;
+	width: 60%;
+}
+
+.linkButton {
+	color: blue;
+	display: block;
+	font-size: 1rem;
+	padding: 1rem 0rem;
+}
+
+.uxProject {
+		margin-bottom: 4rem;
+}
+
+.projectTitle {
+	font-size: 2rem;
+	font-weight: 700;
+	background-color: #eee;
+	padding: 1rem;
+	margin-bottom: 1.25rem;
 }
 
 .floorRug {
@@ -394,21 +466,14 @@ footer {
 	bottom: 0px;
 }
 
-.projectDescription {
-	font-size: 2rem;
-	text-align: left;
-	width: 60%;
-	margin-left: 1rem;
+
 }
 
 body > section > img:nth-child(3) {
 	margin-top: 10rem
 }
 
-.projectImageCaption {
-	margin: 2rem 4rem 10rem 0rem;
-	width: 50%;
-}
+
 
 
 /*photoWork styles*/
@@ -441,38 +506,103 @@ body > div > div:nth-child(1)
 }
 
 .ooogPhoto {
-	width: 75%;
+	width: 50%;
 	display: inline-block;
-	margin-bottom: 3rem;
+	/*margin-bottom: 3rem;*/
+}
+
+.ooogPhoto:hover {
+	 /*box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, .14);*/
+	 background-color: black;
 }
 
 .ooogPhotoBucket {
-	display: inline-block;
+	margin-bottom: 2.5rem;
 }
 
 
-
 /*mobile ish sizes*/
+/*@media (min-width: 480px){
+	#machine {
+		margin: 10rem auto 0;
+		position: relative;
+		top: 0;
+		left: 0;
+		border: none;
+}
+}*/
+
 @media (max-width: 480px){
+	#resume {
+		position: relative;
+		display: block;
+		width: 25.5px;
+		height: 33px;
+	}
+
+	#machine {
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background-color: #1a1a1a;
+		/* vertical-align: middle; */
+		margin-left: 0rem;
+		/* border-top: .5rem solid rgba(0,0,0,.18); */
+		box-shadow: 10px 10px 80px 10px rgba(0, 0, 0, 0.6);
+	}
+
+	.drank  {
+		position: absolute;
+		padding: .25rem;
+		margin-bottom: 4rem;
+		width: 8rem;
+		text-align: center;
+		text-decoration: none;
+		font-variant: small-caps;
+		color: rgba(0, 0, 0, 0.75);
+		font-size: 1rem;
+	}
+
+
+	.resume {
+		position: relative;
+		display: block;
+	  margin: auto;
+		padding: 0;
+	  width: 100%;
+	}
+
+	.oota {
+		background-color: blue;
+		font-size: 2rem;
+		width: 100%;
+	}
+
+
+	.description {
+		font-size: 1.5rem;
+		text-align: left;
+		width: 85%;
+	}
+
+.resButton {
+		margin: 2rem 2rem 2rem 0rem;
+		display: block;
+}
+
+	.bio {
+		display: none;
+	}
 
 	.miniBodega {
 		height: 3rem;
 		background-color: lightblue;
 	}
 
-	.projectName {
-	text-transform: uppercase;
-	font-size: 3rem;
-	width: 90%;
-	margin-left: 1rem;
-}
-
-	.projectDescription {
-	font-size: 2rem;
-	text-align: left;
-	width: 84%;
-	margin-left: 1rem;
-}
+/*.projectImageCaption {
+	margin: 2rem 4rem 10rem 0rem;
+	width: 50%;
+}*/
 
 	.photoStream {
 	margin-left: 0rem;
@@ -492,24 +622,14 @@ body > div > div:nth-child(1)
 	}
 
 	.externals {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: column;
-	-webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-	-ms-flex-pack: distribute;
-	justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
+		display: block;
 }
 	.externals>a {
 	margin-left: 0px;
-	padding-bottom: 20px;
+	margin-bottom: 1rem;
+	display: block;
+	width: 100%;
+	text-align: center;
 }
 
 	.projectNav {
@@ -524,15 +644,6 @@ body > div > div:nth-child(1)
 		display: inline-block;
 		height: 3rem;
 		padding:;
-	}
-
-
-	#machine{
-		margin: 10rem auto 0;
-		position: relative;
-		top: 0;
-		left: 0;
-		border: none;
 	}
 
 	.subtitle {
