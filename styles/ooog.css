@@ -520,6 +520,11 @@ body > div > div:nth-child(1)
 	margin-bottom: 2.5rem;
 }
 
+.resButton {
+		margin: 2rem 2rem 2rem 0rem;
+		display: block;
+}
+
 
 /*mobile ish sizes*/
 /*@media (min-width: 480px){
