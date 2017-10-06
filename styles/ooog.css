@@ -9,6 +9,7 @@ body {
 	background-color: white;
 	margin: 0;
 	position: relative;
+	color: rgba(0, 0, 0, 0.87);
 }
 
 p {
@@ -255,7 +256,7 @@ button:focus {
 }
 
 .miniNavButton {
-		width: 2rem;
+		width: 3.5rem;
 		height: 20rem;
 		background-color: rgba(255,255,255,.34);
 		display: inline-block;
@@ -266,8 +267,8 @@ button:focus {
 }
 
 .miniBodega {
-	height: 20rem;
-	background-color: #1a1a1a;
+	height: 4rem;
+	background-color: blue;
 }
 
 .scrolled {
@@ -407,7 +408,7 @@ footer {
 }
 
 .page {
-	margin: 2.5rem;
+	margin: 10rem;
 }
 
 .pageIntroArea {
@@ -435,9 +436,10 @@ footer {
 }
 
 .description {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-align: left;
-	width: 60%;
+	width: 45%;
+	color: rgba(0, 0, 0, 0.87);
 }
 
 .linkButton {
@@ -545,6 +547,10 @@ body > div > div:nth-child(1)
 		height: 33px;
 	}
 
+	.page {
+		margin: 4rem;
+	}
+
 	#machine {
 		z-index: 2;
 		width: 100%;
@@ -597,11 +603,6 @@ body > div > div:nth-child(1)
 
 	.bio {
 		display: none;
-	}
-
-	.miniBodega {
-		height: 3rem;
-		background-color: lightblue;
 	}
 
 /*.projectImageCaption {
