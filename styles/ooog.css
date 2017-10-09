@@ -438,7 +438,7 @@ footer {
 .description {
 	font-size: 2rem;
 	text-align: left;
-	width: 45%;
+	width: 55%;
 	color: rgba(0, 0, 0, 0.87);
 }
 
@@ -593,7 +593,7 @@ body > div > div:nth-child(1)
 	.description {
 		font-size: 1.5rem;
 		text-align: left;
-		width: 85%;
+		width: 100%;
 	}
 
 .resButton {
