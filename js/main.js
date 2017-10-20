@@ -113,7 +113,7 @@ $('.backward').on('click', function(){
 $('body').on('scroll', function(){
 	console.log('yes');
 $('.miniNavButton').addClass('scrolled');
-}
+};
 
 // function to make buttons look like they're inactive
 function disableButton(){
