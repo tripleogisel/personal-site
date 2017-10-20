@@ -87,33 +87,33 @@ $('.forward').on('click', function(){
 
 
 // backward button
-$('.backward').on('click', function(){
-	console.log('clicked');
-	disableButton();
-	console.log(index);
-	$.ajax({
-		url:"https://tripleogisel.github.io/userWork-movers",
-		context: document.body,
-		dataType: "html"
-		}).done(function(data){
-		if(index>0){
-			// subtracts 1 from index
-			index--;
-			var x = $(data).filter(projects[index]).html();
-			console.log(x)
-			$('.projectDisplay').css('opacity',0).animate({'opacity':1});
-			$('.projectDisplay').html(x);
-			disableButton();
-		}
-
-	});
-
-})
-
-$('body').on('scroll', function(){
-	console.log('yes');
-$('.miniNavButton').addClass('scrolled');
-};
+// $('.backward').on('click', function(){
+// 	console.log('clicked');
+// 	disableButton();
+// 	console.log(index);
+// 	$.ajax({
+// 		url:"https://tripleogisel.github.io/userWork-movers",
+// 		context: document.body,
+// 		dataType: "html"
+// 		}).done(function(data){
+// 		if(index>0){
+// 			// subtracts 1 from index
+// 			index--;
+// 			var x = $(data).filter(projects[index]).html();
+// 			console.log(x)
+// 			$('.projectDisplay').css('opacity',0).animate({'opacity':1});
+// 			$('.projectDisplay').html(x);
+// 			disableButton();
+// 		}
+//
+// 	});
+//
+// })
+//
+// $('body').on('scroll', function(){
+// 	console.log('yes');
+// $('.miniNavButton').addClass('scrolled');
+// };
 
 // function to make buttons look like they're inactive
 function disableButton(){
