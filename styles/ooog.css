@@ -182,6 +182,7 @@ button:focus {
 .brainWork {
 	bottom: 15rem;
 	right: 3rem;
+	color: white;
 
 	background-color: purple;
 }
@@ -198,6 +199,7 @@ button:focus {
 .credits {
 	bottom: 10rem;
 	right: 3rem;
+	color: white;
 
 	background-color: green;
 }
