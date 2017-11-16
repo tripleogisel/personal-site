@@ -28,6 +28,28 @@ display: block;
 font-weight: regular;
 }
 
+.visualTitle {
+	margin-top: 4rem;
+	margin-right: 14rem;
+	font-size: 2rem;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	border-top: 1px black solid;
+}
+
+.visualDescription {
+	font-size: 2.25rem;
+	font-weight: 300;
+	margin-right: 14rem;
+	margin-bottom: 2rem;
+}
+
+.visual {
+	box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.04);
+	margin-bottom: 8rem;
+}
+
 button {
 	-webkit-appearance: none;
 }
@@ -516,7 +538,6 @@ body > div > div:nth-child(1)
 }
 
 .ooogPhoto:hover {
-	 /*box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, .14);*/
 	 background-color: black;
 }
 
@@ -547,6 +568,12 @@ body > div > div:nth-child(1)
 		display: block;
 		width: 25.5px;
 		height: 33px;
+	}
+
+	.visualDescription {
+		font-size: 2.5rem;
+		font-weight: 300;
+		margin-right: 2rem;
 	}
 
 	.page {
@@ -596,6 +623,10 @@ body > div > div:nth-child(1)
 		font-size: 1.75rem;
 		text-align: left;
 		width: 100%;
+	}
+
+	.visualTitle {
+		margin-right: 4rem;
 	}
 
 .resButton {
