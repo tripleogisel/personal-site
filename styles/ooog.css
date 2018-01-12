@@ -31,15 +31,14 @@ font-weight: regular;
 .visualTitle {
 	margin-top: 4rem;
 	margin-right: 14rem;
-	font-size: 1rem;
-	font-variant: small-caps;
+	font-size: 2rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
 	border-top: 1px black solid;
 }
 
 .visualDescription {
-	font-size: 1.25rem;
+	font-size: 3rem;
 	font-weight: 300;
 	margin-right: 14rem;
 	margin-bottom: 2rem;
@@ -48,6 +47,32 @@ font-weight: regular;
 .visual {
 	box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.04);
 	margin-bottom: 8rem;
+}
+
+.introButtonBar{
+	padding-top: 2rem;
+	background-color: white;
+}
+
+.introButton {
+		height: 3rem;
+		background-color: white;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: row;
+		-webkit-box-direction: normal;
+	  -ms-flex-direction: row;
+	  flex-direction: row;
+		-ms-flex-pack: distribute;
+		justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+		padding: 1rem;
+		font-size: 14px;
 }
 
 button {
@@ -72,17 +97,27 @@ button:focus {
 }*/
 
 #home {
-	background-color: #ddd;
-	position: relative;
+	background-color: black;
 }
 
-#floor {
+.name {
+	color: white;
+	position: fixed; /* or absolute */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/*#floor {
 		margin-top: 25rem;
     border-bottom: 31rem solid black;
     border-left: 30rem solid transparent;
     border-right: 30rem solid transparent;
     opacity: .34;
-}
+}*/
 
 #resume {
 		position: fixed;
@@ -532,7 +567,7 @@ body > div > div:nth-child(1)
 }
 
 .ooogPhoto {
-	width: 80%;
+	width: 100%;
 	display: inline-block;
 	/*margin-bottom: 3rem;*/
 }
