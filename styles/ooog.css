@@ -684,7 +684,7 @@ body > div > div:nth-child(1)
 }
 
 	.ooogPhoto {
-		width: 100%;
+		max-width: 800px;
 	}
 
 	html {
